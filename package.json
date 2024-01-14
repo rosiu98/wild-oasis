@@ -3,6 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@redux-devtools/extension": "^3.3.0",
+    "@reduxjs/toolkit": "^2.0.1",
+    "@supabase/supabase-js": "^2.39.1",
+    "@tanstack/react-query": "^4.36.1",
+    "@tanstack/react-query-devtools": "^4.36.1",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -10,9 +15,24 @@
     "@types/node": "^16.18.59",
     "@types/react": "^18.2.33",
     "@types/react-dom": "^18.2.14",
+    "date-fns": "^3.0.6",
+    "json-server": "^0.17.4",
+    "leaflet": "^1.9.4",
     "react": "^18.2.0",
+    "react-datepicker": "^4.24.0",
     "react-dom": "^18.2.0",
+    "react-error-boundary": "^4.0.12",
+    "react-hook-form": "^7.49.2",
+    "react-hot-toast": "^2.4.1",
+    "react-icons": "^4.12.0",
+    "react-leaflet": "^4.2.1",
+    "react-redux": "^9.0.4",
+    "react-router-dom": "^6.21.0",
     "react-scripts": "5.0.1",
+    "recharts": "^2.10.3",
+    "redux": "^5.0.0",
+    "redux-thunk": "^3.1.0",
+    "styled-components": "^6.1.3",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
@@ -20,7 +40,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "server": "json-server --watch src/data/questions.json --port 8000 --delay 500"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +60,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.8",
+    "@types/react-datepicker": "^4.19.3",
+    "prettier": "^3.1.1",
+    "prettier-plugin-tailwindcss": "^0.5.9",
+    "tailwindcss": "^3.3.6"
   }
 }
